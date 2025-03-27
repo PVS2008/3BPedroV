@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap');
+
+:root {
+    --dourado: #d4af37;
+    --escuro: #feffbe;
+    --fundo-claro: #faf4f4;
+    --contraste-dourado: #ffd700;
+    --texto-claro: #000000;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'EB Garamond', serif;
+    background-color: var(--escuro);
+    color: var(--texto-claro);
+}
+
+header {
+    background: url('img/.jpg') no-repeat center center / cover;
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--dourado);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--texto-claro);
+}
+
+.inicio-fundo {
+    background-image: url('img/seven-deadly-sins-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.img-inicio {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.botao-inicio {
+    background-color: var(--dourado);
+    border-radius: 30px;
+    border: none;
+    color: var(--escuro);
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.botao-inicio:hover {
+    background-color: var(--texto-claro);
+    color: var(--escuro);
+}
+
+.display-4 {
+    text-shadow: 0 0 10px var(--contraste-dourado);
+}
+
+#galeria {
+    background-color: var(--fundo-claro);
+    border: 1px solid var(--dourado);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.fundo-galeria {
+    background: url('img/nanatsu-gallery.jpg') center center / cover no-repeat;
+    border-radius: 20px;
+}
+
+#contato {
+    background: url('img/nanatsu-contact-bg.jpg') no-repeat center center / cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: var(--fundo-claro);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.formulario button {
+    background-color: var(--dourado);
+    color: var(--escuro);
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: var(--texto-claro);
+}
+
+.form-control {
+    background-color: #f5f5f5;
+    color: var(--escuro);
+    border: 1px solid var(--dourado);
+}
+.menu-acessibilidade {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: flex;
+}
+
+.alto-contraste {
+    background-color: var(--escuro);
+    color: var(--texto-claro);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario {
+    background-color: var(--escuro);
+    color: var(--texto-claro);
+}
+
+.alto-contraste .nav-link {
+    color: var(--contraste-dourado);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button {
+    background-color: var(--contraste-dourado);
+    color: var(--escuro);
+}
